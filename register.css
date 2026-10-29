@@ -1,0 +1,168 @@
+/* Reset */
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+}
+
+body{
+font-family:"Segoe UI",Arial,sans-serif;
+background:linear-gradient(135deg,#4facfe,#00f2fe);
+height:100vh;
+display:flex;
+justify-content:center;
+align-items:center;
+}
+
+/* Main Card */
+.box{
+background:white;
+padding:40px 35px;
+width:100%;
+max-width:420px;
+border-radius:12px;
+box-shadow:0 15px 35px rgba(0,0,0,0.2);
+text-align:center;
+animation:fadeIn 0.6s ease;
+}
+
+/* Fade animation */
+@keyframes fadeIn{
+from{
+opacity:0;
+transform:translateY(15px);
+}
+to{
+opacity:1;
+transform:translateY(0);
+}
+}
+
+/* Title */
+.box h2{
+margin-bottom:25px;
+font-size:28px;
+color:#333;
+font-weight:600;
+}
+
+/* Message */
+.message{
+color:#e74c3c;
+margin-bottom:15px;
+font-size:14px;
+font-weight:600;
+}
+
+/* Inputs */
+.box input{
+width:100%;
+padding:13px 15px;
+margin:10px 0;
+border:1px solid #ddd;
+border-radius:8px;
+font-size:15px;
+outline:none;
+transition:all 0.3s ease;
+}
+
+.box input:focus{
+border-color:#4facfe;
+box-shadow:0 0 6px rgba(79,172,254,0.4);
+}
+
+/* Button */
+.box button{
+width:100%;
+padding:13px;
+margin-top:15px;
+background:linear-gradient(135deg,#4facfe,#00c6ff);
+color:white;
+border:none;
+border-radius:8px;
+font-size:16px;
+font-weight:600;
+cursor:pointer;
+transition:0.3s;
+}
+
+.box button:hover{
+transform:translateY(-2px);
+box-shadow:0 8px 15px rgba(0,0,0,0.2);
+}
+
+/* Links */
+.box p{
+margin-top:18px;
+font-size:14px;
+}
+
+.box a{
+color:#007BFF;
+text-decoration:none;
+font-weight:600;
+}
+
+.box a:hover{
+text-decoration:underline;
+}
+
+/* reCAPTCHA */
+.g-recaptcha{
+margin:15px 0;
+display:flex;
+justify-content:center;
+transform:scale(0.95);
+}
+
+/* OTP BOXES */
+
+.otp-container{
+display:flex;
+justify-content:space-between;
+gap:10px;
+margin-top:15px;
+margin-bottom:10px;
+}
+
+.otp-container input{
+width:50px;
+height:55px;
+font-size:22px;
+text-align:center;
+border-radius:8px;
+border:1px solid #ccc;
+outline:none;
+transition:0.2s;
+}
+
+.otp-container input:focus{
+border-color:#4facfe;
+box-shadow:0 0 5px rgba(79,172,254,0.5);
+}
+
+/* Mobile */
+
+@media(max-width:500px){
+
+.box{
+padding:30px 25px;
+width:90%;
+}
+
+.box h2{
+font-size:24px;
+}
+
+.otp-container input{
+width:42px;
+height:48px;
+font-size:20px;
+}
+
+.g-recaptcha{
+transform:scale(0.85);
+transform-origin:center;
+}
+
+}
