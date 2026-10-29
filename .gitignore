@@ -1,0 +1,29 @@
+# Files with real passwords / secrets
+forgot_password.php
+.env
+
+# Keep the example file in the repo
+!forgot_password_example.php
+
+# Composer / dependencies (if you use Composer)
+/vendor/
+composer.lock
+
+# Logs
+*.log
+error_log
+
+# OS files
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Editor / IDE folders
+.vscode/
+.idea/
+*.swp
+
+# Uploads and temp files
+/uploads/
+/tmp/
+*.tmp
